@@ -490,6 +490,9 @@ class TaxPayerProfile(models.Model):
         ),
     )
 
+    def __str__(self):
+        return f'<TaxPayerProfile for TaxPayer {self.pk}>'
+
     class Meta:
         verbose_name = _('taxpayer profile')
         verbose_name_plural = _('taxpayer profiles')
