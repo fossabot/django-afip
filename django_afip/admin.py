@@ -352,6 +352,7 @@ class TaxPayerAdmin(admin.ModelAdmin):
 @admin.register(models.PointOfSales)
 class PointOfSalesAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'owner',
         'number',
         'issuance_type',
